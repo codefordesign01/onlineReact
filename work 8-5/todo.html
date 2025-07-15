@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <style>
+  .list-group li{
+   list-style: none;
+   padding: 5px 10px;
+   border-bottom:1px solid ;
+   display: flex;
+   justify-content: space-between;
+  }
+ </style>
+</head>
+<body>
+ <div class="container py-5">
+  <div class="row justify-content-center">
+   <div class="col-lg-4 col-md-10 col-sm-12">
+    <div class="bg-white shadow p-4 border border-success">
+     <h3 class="text-center tet-success">Todo List</h3>
+     <div class="d-flex gx-2 py-3">
+      <input type="text" class="form-control" id="inputTask" />
+      <button class="btn btn-success" onclick="addTask()">Add</button>
+     </div>
+     <ul class="list-group" id="taskList">
+      
+     </ul>
+    </div>
+   </div>
+  </div>
+ </div>
+
+ <script>
+  let tasks = [];
+   const addTask = () =>{
+    var input = document.getElementById("inputTask");
+    var tasktext = input.value.toUpperCase();
+    if(tasktext !== ""){
+     tasks.push(tasktext);
+     input.value = "";
+     showTask();
+    }
+    else{
+     alert("Enter value");
+    }
+    console.log("total arry"+tasks)
+
+   }
+
+   function showTask(){
+    const list = document.getElementById("taskList");
+    list.innerHTML = "";
+    tasks.forEach((x , i) => {
+     const tag = document.createElement('li');
+     tag.innerHTML = `${x} <button onclick="deleteTask(${i})" class="bg-white border-0"><i class="fa-solid fa-xmark text-danger"></i></button>`;
+     list.appendChild(tag);
+    })
+   }
+   function deleteTask(i){
+    tasks.splice(i , 1);
+    console.log("after delete" + tasks);
+    showTask();
+   }
+  
+ </script>
+ 
+</body>
+</html>

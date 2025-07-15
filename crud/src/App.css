@@ -1,0 +1,9 @@
+.navbar-nav .active{
+ background-color: rgb(76, 203, 72);
+ 
+}
+.navbar-nav .nav-link{
+ border-radius: 10px;
+ padding-left: 20px !important;
+ padding-right: 20px !important;
+}
