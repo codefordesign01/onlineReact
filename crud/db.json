@@ -1,25 +1,25 @@
 {
   "products": [
     {
-      "id": 1,
-      "title": "Video Camera",
+      "title": "Video Camera new",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzzBfmW2MHhwlHlshf98EWrR55PJWtj63n5g&s",
-      "price": "500",
-      "discripation": "Video Camera Clipart Camra - Canon Xf200 - Camcorder - 1080p Transparent PNG - 800x800 - "
+      "price": "2000",
+      "discripation": "Video Camera Clipart Camra - Canon Xf200 - Camcorder - 1080p Transparent PNG - 800x800 - ",
+      "id": 1
     },
     {
-      "id": 2,
-      "title": "Computer",
+      "title": "Computer update",
       "image": "https://media.geeksforgeeks.org/wp-content/uploads/20240710085808/desktop.jpg",
-      "price": "6999",
-      "discripation": "A computer is a machine that can be programmed to automatically carry out sequences of arithmetic or logical operations (computation). "
+      "price": "8999",
+      "discripation": "A computer is a machine that can be programmed to automatically carry out sequences of arithmetic or logical operations (computation). ",
+      "id": 2
     },
     {
-      "id": 3,
-      "title": "Hp Chromebook",
+      "title": "Hp laptop",
       "image": "https://img.drz.lazcdn.com/static/pk/p/1c45fae15ad14a3ff984054624181eaf.jpg_720x720q80.jpg_.webp",
-      "price": "8999",
-      "discripation": "Hp Chromebook 11 G6 EE | 4GB RAM DDR4 | 16GB SSD EMMC | Playstore supported | 11.6"
+      "price": "2999",
+      "discripation": "Hp Chromebook 11 G6 EE | 4GB RAM DDR4 | 16GB SSD EMMC | Playstore supported | 11.6",
+      "id": 3
     },
     {
       "id": 4,

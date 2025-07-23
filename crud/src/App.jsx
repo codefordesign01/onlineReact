@@ -10,6 +10,8 @@ import Header from './components/Header'
 import Admin from './pages/admin/Admin';
 import AdminLayput from './components/AdminLayput';
 import AddProduct from './pages/products/AddProduct'
+import ViewProdcut from './pages/products/ViewProdcut';
+import EditProduct from './pages/products/EditProduct';
 
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
         <Route element={<AdminLayput />}>
           <Route path='admin' element={<Admin />} />
           <Route path='addProduct' element={<AddProduct />} />
+          <Route path='viewProduct/:id' element={<ViewProdcut />} />
+          <Route path='eidtProduct/:id' element={<EditProduct />} />
         </Route>
         
 

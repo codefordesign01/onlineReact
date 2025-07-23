@@ -41,7 +41,7 @@ const Admin = () => {
          <h2>Admin Page</h2>
          <Link className='btn btn-info' to="/addProduct">Add New Product</Link>
        </div>
-      <table class="table table-striped border mt-5">
+      <table className="table table-striped border mt-5">
       <thead>
         <tr>
           <th scope="col">Id</th>
@@ -63,21 +63,22 @@ const Admin = () => {
             <td>{product.price}</td>
             <td>{product.discripation}</td>
             <td>
-             <button className='btn'>
-              <i class="fa-solid fa-pen-to-square text-info"></i>
-             </button>
-             <button className='btn'>
-              <i class="fa-solid fa-eye text-success"></i>
-             </button>
+             <Link to={"/eidtProduct/" + product.id} className='btn'>
+              <i className="fa-solid fa-pen-to-square text-info"></i>
+             </Link>
+             <Link to={"/viewProduct/" + product.id} className='btn'>
+              <i className="fa-solid fa-eye text-success"></i>
+             </Link>
              <button className='btn ' onClick={()=>{deleteProduct(product.id)}}>
-              <i class="fa-solid fa-trash text-danger"></i>
+              <i className="fa-solid fa-trash text-danger"></i>
              </button>
             </td>
           </tr>
           ))
-          : <div className='bg-white shadow  rounded border m-auto' style={{height:"400px" , width:"800"}}>
-           <h1>Data Loading ....</h1>
-          </div>
+          : <tbody className='bg-white shadow  rounded border m-auto' style={{height:"400px" , width:"800"}}>
+            
+           <td>Data Loading ....</td>
+          </tbody>
          }
           
         </tbody>
