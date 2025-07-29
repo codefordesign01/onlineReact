@@ -48,6 +48,55 @@
       "price": "44544",
       "discripation": "ksjdfj sljsdl j sd",
       "id": 16
+    },
+    {
+      "title": "Video Camera new",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzzBfmW2MHhwlHlshf98EWrR55PJWtj63n5g&s",
+      "price": "2000",
+      "discripation": "Video Camera Clipart Camra - Canon Xf200 - Camcorder - 1080p Transparent PNG - 800x800 - ",
+      "id": 17
+    },
+    {
+      "title": "Computer update",
+      "image": "https://media.geeksforgeeks.org/wp-content/uploads/20240710085808/desktop.jpg",
+      "price": "8999",
+      "discripation": "A computer is a machine that can be programmed to automatically carry out sequences of arithmetic or logical operations (computation). ",
+      "id": 18
+    },
+    {
+      "title": "Hp laptop",
+      "image": "https://img.drz.lazcdn.com/static/pk/p/1c45fae15ad14a3ff984054624181eaf.jpg_720x720q80.jpg_.webp",
+      "price": "2999",
+      "discripation": "Hp Chromebook 11 G6 EE | 4GB RAM DDR4 | 16GB SSD EMMC | Playstore supported | 11.6",
+      "id": 19
+    },
+    {
+      "id": 20,
+      "title": "15PROMA X",
+      "image": "https://m.media-amazon.com/images/I/61NQ7obsetL._AC_SX569_.jpg",
+      "price": "15999",
+      "discripation": "15PROMA X 12+512GB Unlocked Cell Phone,Smartphone 6.85' HD Screen Unlocked Phones,Battery 7000mAh Android 13,5G/Face ID/Fingerprint Unlock/Dual SIM/GPS (Pink)"
+    },
+    {
+      "id": 21,
+      "title": "OneOdio Wired",
+      "image": "https://m.media-amazon.com/images/I/71MzTsi7UjL._AC_SX425_.jpg",
+      "price": "25",
+      "discripation": "OneOdio Wired Over Ear Headphones Hi-Res Studio Monitor & Mixing DJ Stereo Headsets with 50mm Drivers and 1/4 to 3.5mm Jack for AMP Computer Recording Podcast Keyboard Guitar Laptop - Black"
+    },
+    {
+      "id": 22,
+      "title": "Apple 2025 MacBook",
+      "image": "https://m.media-amazon.com/images/I/71cWZUr9SVL._AC_SX466_.jpg",
+      "price": "2500",
+      "discripation": "Apple 2025 MacBook Air 13-inch Laptop with M4 chip: Built for Apple Intelligence, 13.6-inch Liquid Retina Display, 16GB Unified Memory, 256GB SSD Storage, 12MP Center Stage Camera, Touch ID; Midnight "
+    },
+    {
+      "title": "shahzad",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXUVXERm3yWgAa9s5uAIG2et2PtD1mM-1n6g&s",
+      "price": "44544",
+      "discripation": "ksjdfj sljsdl j sd",
+      "id": 23
     }
   ],
   "comments": [

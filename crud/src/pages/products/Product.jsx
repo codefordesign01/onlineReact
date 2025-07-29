@@ -6,18 +6,24 @@ const Product = () => {
 
   const [product , setProduct] = useState([]);
   const [loading , setLoding] = useState(false);
+  const [curentPage , setCurentPage] = useState(1);
+  const [totalPage , setTotalPage] = useState(1);
+
+  const limit = 3;
 
   useEffect(()=>{
-    getProducts();
+    getProducts(curentPage);
     setLoding(true);
-  },[])
+  },[curentPage])
 
-  const getProducts = async ()=>{
-    const url = "http://localhost:3000/products";
+  const getProducts = async (pageNumber)=>{
+    const url = `http://localhost:3000/products?_page=${pageNumber}&_limit=${limit}`;
     let response = await fetch(url);
+    const totalProduct = response.headers.get('X-Total-Count');
     response = await response.json();
     setProduct(response);
     setLoding(false);
+    setTotalPage(Math.ceil(totalProduct/limit));
     
   }
 
@@ -56,6 +62,13 @@ const Product = () => {
               </div>
             }
             
+          </div>
+          <div className='d-flex justify-content-center'>
+            <ul className="pagination">
+              <li  className="page-item " ><button disabled={curentPage === 1}  onClick={()=>setCurentPage(curentPage -1)}  className="page-link" >Previous</button></li>
+              <span>Page {curentPage} of {totalPage}</span>
+              <li className="page-item"><button disabled={curentPage === totalPage} onClick={()=>setCurentPage(curentPage + 1)} className="page-link" >Next</button></li>
+            </ul>
           </div>
         </div>
       </div>
