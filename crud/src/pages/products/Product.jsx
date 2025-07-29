@@ -9,7 +9,7 @@ const Product = () => {
   const [curentPage , setCurentPage] = useState(1);
   const [totalPage , setTotalPage] = useState(1);
 
-  const limit = 3;
+  const limit = 6;
 
   useEffect(()=>{
     getProducts(curentPage);
@@ -24,6 +24,7 @@ const Product = () => {
     setProduct(response);
     setLoding(false);
     setTotalPage(Math.ceil(totalProduct/limit));
+    console.log(curentPage)
     
   }
 
@@ -66,7 +67,9 @@ const Product = () => {
           <div className='d-flex justify-content-center'>
             <ul className="pagination">
               <li  className="page-item " ><button disabled={curentPage === 1}  onClick={()=>setCurentPage(curentPage -1)}  className="page-link" >Previous</button></li>
-              <span>Page {curentPage} of {totalPage}</span>
+              {[...Array(totalPage)].map((_, index) => (
+                <li key={index} className='page-item'> <button onClick={()=>{setCurentPage(index + 1)}} className="page-link" >{index + 1}</button></li>
+              ))}
               <li className="page-item"><button disabled={curentPage === totalPage} onClick={()=>setCurentPage(curentPage + 1)} className="page-link" >Next</button></li>
             </ul>
           </div>
